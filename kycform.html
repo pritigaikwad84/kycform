@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kyc.css">
+</head>
+<body>
+   <div class="container">
+       <div class="form">
+           <form action="conn.php" method="POST" enctype="multipart/form-data">
+               <h4>KYC</h4>
+               <hr>
+               <div class="name">
+                   <div class="fname">
+                       <label for="fname">First Name</label><br>
+                       <input type="text" name="fname" id="fname" required>
+                   </div>
+                   <div class="mname">
+                        <label for="mname">Middle Name</label><br>
+                        <input type="text" name="mname" id="nname" required >
+                    </div>
+                    <div class="lname">
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+               </div>
+               <div class="cname">
+                    <label for="cname">Company Name</label><br>
+                    <input type="text" name="cname" id="cname" required>
+               </div>
+               <hr>
+               <div class="mob">
+                    <label for="mno">Registered Mobile no.</label><br>
+                    <input type="tel" name="mno" id="mno" required>
+               </div>
+               <hr>
+               <div class="email">
+                    <div class="e">
+                        <label for="eid">Registered Email Id</label><br>
+                        <input type="email" name="eid" id="eid" required>
+                    </div>
+                    <div class="e">
+                        <label for="dob">Date Of Birth(As Per Pancard)</label><br>
+                        <input type="date" name="dob" id="dob" required>
+                    </div>
+                    <div class="e">
+                        <label for="pan">Pancard No.</label><br>
+                        <input type="text" name="pan" id="pan" required>
+                    </div>  
+                </div>
+                <hr>
+                <div class="addrs">
+                    <div class="pin">
+                        <label for="pin">Pincode</label><br>
+                        <input type="number" name="pin" id="pin" required>
+                    </div>
+                    <div class="dis">
+                        <label for="dis">District</label><br>
+                        <input type="text" name="dis" id="dis" required>
+                    </div>
+                    <div class="state">
+                        <label for="state">state</label><br>
+                        <input type="text" name="state" id="state" required>
+                    </div>  
+                    <div class="city">
+                        <label for="city">city</label><br>
+                        <input type="text" name="city" id="city" required>
+                    </div>
+                    <div class="add">
+                        <label for="add">Address</label><br>
+                        <input type="text" name="add" id="add" required>
+                    </div>  
+                </div>
+                <div class="note">
+                    <p>Note-Clear Self Attested Front Scanned Image Is Required</p> 
+                </div>
+                <div class="upload">
+                    <div class="adhaar">
+                        <h4>Adhaar</h4><br>
+                        <input type="file" name="adhaar" id="adhaar" required><br>
+                        <img src="" alt="aadhar">
+                    </div>
+                    <div class="pancrd">
+                        <h4>Pancard</h4><br>
+                        <input type="file" name="pancrd" id="pancrd" required><br>
+                        <img src="pancard" alt="pancard">
+                    </div>
+                </div>
+                <div class="steps">
+                    <h4>Steps To Upload</h4> 
+                    <ul>
+                        <li>Download E-Addhar from <a href="https://eaadhaar.uidai.gov.in">https://eaadhaar.uidai.gov.in</a></li>
+                        <li>Take a print and self attest the document</li>
+                        <li>Scan and upload the self attested copy of E-Addhar</li>
+                    </ul>
+                    <h4>Steps To Upload</h4> 
+                    <ul>
+                        <li>Only JPG/JPEG/PDF format are allowed</li>
+                        <li>The docoment Must be latest and Clear</li>
+                        
+                    </ul>
+                </div>
+                <div class="button">
+                    <button type="submit">Upload Kyc</button>
+                </div>
+                <div class="footer">
+                    <p>Please upload the documents clear and color format.Your Kyc will be approved between 48-72 Hr <br>
+                    Request you to please upload the documents properly.On rejection of Kyc 3 times Id shall be blocked</p>
+                </div>
+           </form>
+       </div>
+   </div>
+</body>
+</html>
